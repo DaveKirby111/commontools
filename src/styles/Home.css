@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header,
+main,
+nav,
+footer {
+  border: 2px solid black;
+}
+
+/* Header */
+
+header {
+  padding: 30px;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 50px !important;
+}
