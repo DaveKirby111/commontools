@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import Nav from "../Nav";
 
 const Layout = ({ children }) => {
   return (
@@ -7,6 +8,8 @@ const Layout = ({ children }) => {
       <header>
         <h1>office tools</h1>
       </header>
+
+      <Nav />
 
       <main>{children}</main>
 
