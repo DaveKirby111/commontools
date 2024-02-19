@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+input {
+  border: 1px solid black;
+  padding: 10px;
+  width: 75%;
+}
+
+.addBtn {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+}
+
+#addToList {
+  padding: 30px;
+}

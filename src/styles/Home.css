@@ -5,7 +5,8 @@
 header,
 main,
 nav,
-footer {
+footer,
+div {
   border: 2px solid black;
 }
 
