@@ -2,24 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-h2 {
-  text-align: center;
-  font-size: 35px;
-}
-
 input {
-  border: 1px solid black;
-  padding: 10px;
-  width: 75%;
+  @apply border-2 border-black;
+  @apply p-2;
+  @apply w-2/4;
 }
 
 .addBtn {
-  border: 2px solid black;
-  padding: 10px;
-  text-align: center;
-  width: 25%;
+  @apply border-2 border-black;
+  @apply bg-gray-300;
+  @apply p-2;
+  @apply w-1/4;
+}
+
+.addBtn:hover {
+  @apply bg-gray-400;
 }
 
 #addToList {
-  padding: 30px;
+  @apply p-5;
+  @apply flex;
+  @apply justify-center;
+}
+
+#todoList li {
+  @apply border-2 border-b-black;
+  @apply p-2;
+  @apply text-xl;
+  @apply flex; /* Enable Flexbox for the list item */
+  @apply items-center; /* Vertically align the text and span */
+  @apply justify-between; /* Put maximum space between items */
+}
+
+.close {
+  @apply text-4xl;
+}
+
+.close:hover {
+  @apply cursor-pointer;
+  @apply text-red-600;
 }

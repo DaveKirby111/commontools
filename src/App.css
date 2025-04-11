@@ -1,6 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "./styles/Home.css";
 @import "./styles/Nav.css";
 @import "./styles/Todo.css";
+@import "./styles/Calendar.css";
 
 * {
   box-sizing: border-box;
