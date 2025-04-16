@@ -2,22 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-header,
-main,
-nav,
-footer,
-div {
-  border: 2px solid black;
-}
-
 /* Header */
 
 header {
-  padding: 30px;
+  @apply text-white;
 }
 
 h1 {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 50px !important;
+  @apply capitalize;
+  @apply text-center;
+  @apply text-5xl !important;
+}
+
+.home h1 {
+  @apply mb-7;
+}
+
+.home h2 {
+  @apply text-left;
+  @apply mb-7;
+}
+
+.home p {
+  @apply mb-7;
+}
+
+/* Footer */
+
+footer {
+  @apply capitalize;
+  @apply bg-blue-700;
+  @apply text-white;
+  @apply text-center;
 }

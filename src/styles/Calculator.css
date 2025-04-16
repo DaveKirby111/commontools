@@ -4,20 +4,29 @@
 
 .calculator {
   @apply bg-gray-100;
-  @apply p-4;
+  @apply p-6;
   @apply rounded-md;
   @apply shadow-md;
-  @apply w-64;
+  @apply w-96;
   @apply mx-auto;
+  @apply mt-5;
+  @apply mb-7;
+  @apply bg-gray-600;
+}
+
+.buttons {
+  @apply border-2 border-black;
+  @apply rounded-md;
+  @apply p-4;
 }
 
 .display {
   @apply bg-gray-800;
   @apply text-white;
   @apply text-right;
-  @apply p-3;
+  @apply p-5;
   @apply rounded-md;
-  @apply text-xl;
+  @apply text-2xl;
   @apply mb-2;
 }
 
@@ -26,9 +35,10 @@
   @apply hover:bg-gray-400;
   @apply text-gray-800;
   @apply font-bold;
-  @apply py-2;
-  @apply px-4;
+  @apply py-3;
+  @apply px-6;
   @apply rounded-md;
+  @apply text-2xl;
 }
 
 .button2 {
@@ -36,9 +46,10 @@
   @apply hover:bg-orange-600;
   @apply text-white;
   @apply font-bold;
-  @apply py-2;
-  @apply px-4;
+  @apply py-3;
+  @apply px-6;
   @apply rounded-md;
+  @apply text-2xl;
 }
 
 .button3 {
@@ -46,9 +57,10 @@
   @apply hover:bg-gray-300;
   @apply text-gray-800;
   @apply font-bold;
-  @apply py-2;
-  @apply px-4;
+  @apply py-3;
+  @apply px-6;
   @apply rounded-md;
+  @apply text-2xl;
 }
 
 .button4 {
@@ -56,10 +68,11 @@
   @apply hover:bg-gray-300;
   @apply text-gray-800;
   @apply font-bold;
-  @apply py-2;
-  @apply px-4;
+  @apply py-3;
+  @apply px-6;
   @apply rounded-md;
   @apply col-span-2;
+  @apply text-2xl;
 }
 
 .button5 {
@@ -67,7 +80,8 @@
   @apply hover:bg-green-600;
   @apply text-white;
   @apply font-bold;
-  @apply py-2;
-  @apply px-4;
+  @apply py-3;
+  @apply px-6;
   @apply rounded-md;
+  @apply text-2xl;
 }

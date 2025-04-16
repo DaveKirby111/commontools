@@ -13,29 +13,57 @@ input {
   @apply bg-gray-300;
   @apply p-2;
   @apply w-1/4;
+  @apply text-center;
+  @apply ml-2;
+  @apply rounded-md;
+  @apply text-xl;
+  @apply border-4 border-double;
+}
+
+#addItem {
+  @apply p-3;
+}
+
+.addcontainer {
+  @apply border-b-4;
+  @apply border-gray-400;
 }
 
 .addBtn:hover {
   @apply bg-gray-400;
+  @apply text-white;
+}
+
+.warning {
+  @apply bg-gray-100;
+  @apply text-center;
+  @apply capitalize;
+}
+
+.warning p {
+  @apply text-red-600;
+  @apply text-lg;
 }
 
 #addToList {
-  @apply p-5;
+  @apply p-3;
   @apply flex;
   @apply justify-center;
+  @apply bg-gray-100;
 }
 
 #todoList li {
-  @apply border-2 border-b-black;
+  @apply border-b-2 border-b-black; /* Removed general border */
   @apply p-2;
   @apply text-xl;
-  @apply flex; /* Enable Flexbox for the list item */
-  @apply items-center; /* Vertically align the text and span */
-  @apply justify-between; /* Put maximum space between items */
+  @apply flex;
+  @apply items-center;
+  @apply justify-between;
 }
 
 .close {
   @apply text-4xl;
+  @apply ml-2; /* Adjusted margin for spacing */
 }
 
 .close:hover {

@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+nav {
+  @apply bg-blue-400;
+  @apply border-b-2;
+  @apply border-blue-400;
+}
+
 nav ul li {
-  @apply border-2 border-black;
+  @apply text-lg;
+  @apply p-4;
+  @apply ml-5;
+  @apply font-bold;
+  @apply text-white;
 }
 
 nav ul {
-  @apply border-2 border-red-500;
+  @apply flex;
+  @apply justify-center;
 }

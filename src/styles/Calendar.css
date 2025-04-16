@@ -8,3 +8,12 @@ h2 {
   @apply capitalize;
   @apply underline;
 }
+
+#month {
+  @apply text-3xl;
+  @apply no-underline;
+}
+
+.themonth {
+  @apply p-9;
+}

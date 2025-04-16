@@ -94,11 +94,15 @@ export default function Calculator() {
     setDisplay(String(parseFloat(display) * -1));
   };
 
+  const calc = {
+    boxShadow: "7px 7px 7px gray",
+  };
+
   return (
-    <Layout>
-      <div className="calculator">
+    <Layout page="Calculator">
+      <div className="calculator" style={calc}>
         <div className="display">{display}</div>
-        <div className="grid grid-cols-4 gap-2">
+        <div className="buttons grid grid-cols-4 gap-2">
           <button className="button1" onClick={clearDisplay}>
             AC
           </button>
