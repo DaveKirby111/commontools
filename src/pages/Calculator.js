@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
-import "../styles/Calculator.css";
+import "../styles/Calculator.css"; // We'll adjust this
 
 export default function Calculator() {
   const [display, setDisplay] = useState("0");
@@ -94,76 +94,401 @@ export default function Calculator() {
     setDisplay(String(parseFloat(display) * -1));
   };
 
-  const calc = {
-    boxShadow: "7px 7px 7px gray",
-  };
-
   return (
     <Layout page="Calculator">
-      <div className="calculator" style={calc}>
-        <div className="display">{display}</div>
-        <div className="buttons grid grid-cols-4 gap-2">
-          <button className="button1" onClick={clearDisplay}>
-            AC
-          </button>
-          <button className="button1" onClick={deleteLastDigit}>
-            DEL
-          </button>
-          <button className="button1" onClick={handlePercentage}>
-            %
-          </button>
-          <button className="button2" onClick={() => handleOperator("/")}>
-            /
-          </button>
+      <div
+        className="
+      calculator-container  
+      p-2"
+      >
+        <div
+          className="
+          mx-auto
+          my-8
+          p-4
+          rounded-md
+          shadow-lg
+          bg-gray-600
+          max-w-md
+          md:max-w-sm
+          lg:max-w-xs
+        "
+        >
+          <div
+            className="
+            bg-gray-800
+            text-white
+            text-right
+            p-4
+            rounded-t-md
+            text-2xl
+            overflow-hidden
+            whitespace-nowrap
+            font-mono
+            mb-5
+          "
+          >
+            {display}
+          </div>
+          <div
+            className="
+        grid 
+        grid-cols-4 
+        gap-2 p-4 
+        bg-gray-600 
+        rounded-b-md 
+        border-2 
+        border-black 
+        rounded-md"
+          >
+            <button
+              className="
+              bg-gray-300
+              hover:bg-gray-400
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={clearDisplay}
+            >
+              AC
+            </button>
+            <button
+              className="
+              bg-gray-300
+              hover:bg-gray-400
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={deleteLastDigit}
+            >
+              DEL
+            </button>
+            <button
+              className="
+              bg-gray-300
+              hover:bg-gray-400
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={handlePercentage}
+            >
+              %
+            </button>
+            <button
+              className="
+              bg-orange-400
+              hover:bg-orange-500
+              text-white
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => handleOperator("/")}
+            >
+              /
+            </button>
 
-          <button className="button3" onClick={() => inputDigit(7)}>
-            7
-          </button>
-          <button className="button3" onClick={() => inputDigit(8)}>
-            8
-          </button>
-          <button className="button3" onClick={() => inputDigit(9)}>
-            9
-          </button>
-          <button className="button2" onClick={() => handleOperator("*")}>
-            *
-          </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(7)}
+            >
+              7
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(8)}
+            >
+              8
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(9)}
+            >
+              9
+            </button>
+            <button
+              className="
+              bg-orange-400
+              hover:bg-orange-500
+              text-white
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => handleOperator("*")}
+            >
+              *
+            </button>
 
-          <button className="button3" onClick={() => inputDigit(4)}>
-            4
-          </button>
-          <button className="button3" onClick={() => inputDigit(5)}>
-            5
-          </button>
-          <button className="button3" onClick={() => inputDigit(6)}>
-            6
-          </button>
-          <button className="button2" onClick={() => handleOperator("-")}>
-            -
-          </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(4)}
+            >
+              4
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(5)}
+            >
+              5
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(6)}
+            >
+              6
+            </button>
+            <button
+              className="
+              bg-orange-400
+              hover:bg-orange-500
+              text-white
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => handleOperator("-")}
+            >
+              -
+            </button>
 
-          <button className="button3" onClick={() => inputDigit(1)}>
-            1
-          </button>
-          <button className="button3" onClick={() => inputDigit(2)}>
-            2
-          </button>
-          <button className="button3" onClick={() => inputDigit(3)}>
-            3
-          </button>
-          <button className="button2" onClick={() => handleOperator("+")}>
-            +
-          </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(1)}
+            >
+              1
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(2)}
+            >
+              2
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => inputDigit(3)}
+            >
+              3
+            </button>
+            <button
+              className="
+              bg-orange-400
+              hover:bg-orange-500
+              text-white
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={() => handleOperator("+")}
+            >
+              +
+            </button>
 
-          <button className="button4" onClick={() => inputDigit(0)}>
-            0
-          </button>
-          <button className="button3" onClick={inputDecimal}>
-            .
-          </button>
-          <button className="button5" onClick={handleEquals}>
-            =
-          </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+              col-span-2
+            "
+              onClick={() => inputDigit(0)}
+            >
+              0
+            </button>
+            <button
+              className="
+              bg-gray-100
+              hover:bg-gray-300
+              text-gray-800
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={inputDecimal}
+            >
+              .
+            </button>
+            <button
+              className="
+              bg-green-500
+              hover:bg-green-600
+              text-white
+              font-bold
+              py-3
+              rounded-md
+              shadow-sm
+              transition
+              duration-150
+              ease-in-out
+              focus:outline-none
+            "
+              onClick={handleEquals}
+            >
+              =
+            </button>
+          </div>
         </div>
       </div>
     </Layout>

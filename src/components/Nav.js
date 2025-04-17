@@ -25,7 +25,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="capitalize flex items-center w-full">
+    <nav className="capitalize flex flex-col md:flex-row items-center w-full">
       <Link
         to="/"
         className="ml-4"
@@ -39,7 +39,7 @@ export default function Nav() {
           width={"200px"}
         />
       </Link>
-      <ul className="flex mx-auto">
+      <ul className="flex flex-col md:flex-row mx-auto">
         {links.map((link) => {
           return (
             <li className="p-1 text-2xl" id={link.id} key={link.id}>

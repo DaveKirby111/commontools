@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import Layout from "../components/layout/Layout";
 import tools from "../images/tools.jpg";
 
@@ -6,8 +7,8 @@ function Home() {
   return (
     <>
       <Layout page=" My Office Tools">
-        <div className="flex p-4">
-          <div className="p-5">
+        <div className="flex flex-col md:flex-row p-4">
+          <div className="home-container p-5">
             <img
               src={tools}
               className="tools"
