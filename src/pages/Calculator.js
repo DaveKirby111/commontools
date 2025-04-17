@@ -90,9 +90,9 @@ export default function Calculator() {
     setWaitingForSecondOperand(true);
   };
 
-  const handleSignToggle = () => {
-    setDisplay(String(parseFloat(display) * -1));
-  };
+  // const handleSignToggle = () => {
+  //   setDisplay(String(parseFloat(display) * -1));
+  // };
 
   return (
     <Layout page="Calculator">
